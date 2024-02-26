@@ -44,44 +44,28 @@ if(isset($_POST['submit']))
         echo "erreur d envoi";
     }
 };
-//     session_start();
-//     if(isset($_POST['submit']))
-//     {
-//         // On vérifie si les champs ont une valeur
-//         if(!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['confirm-password']))
-//         {
-//             $motdepasse = password_hash($_POST['password'],PASSWORD_DEFAULT);
-//             $_SESSION['username'] = $_POST['username'];
-//             $_SESSION['password'] = $motdepasse;
+    session_start();
+    if(isset($_POST['submit']))
+    {
+        // On vérifie si les champs ont une valeur
+        if(!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['confirm-password']))
+        {
+            $motdepasse = password_hash($_POST['password'],PASSWORD_DEFAULT);
+            $_SESSION['username'] = $_POST['username'];
+            $_SESSION['password'] = $motdepasse;
     
-//             {
-//                 // On prépare notre ligne CSV
-//                 $donnees = $_POST['username'].';'.$motdepasse."\n";
-//                 // J'insère ma nouvelle ligne
-//                 fwrite($fp,$donnees);
-//                 // Je ferme mon fichier
-//                 fclose($fp);
-//                 echo 'Inscription réussie';
+            {
+                // On prépare notre ligne CSV
+                $donnees = $_POST['username'].';'.$motdepasse."\n";
+                // J'insère ma nouvelle ligne
+                fwrite($fp,$donnees);
+                // Je ferme mon fichier
+                fclose($fp);
+                echo 'Inscription réussie';
     
-//             }
-//         }
+            }
+        }
     
-//     };
-//     session_start();
-// if(isset($_POST['submit']))
-// {
-//     if(!empty($_POST['username']) && !empty($_POST['password']))
-//     {
-        
-//         // On vérifie si les valeurs sont dans la session
-//         if(($_POST['username'] == $_SESSION['username']) && password_verify($_POST['password'],$_SESSION['password']))
-//         {
-//             echo 'Vous êtes connecté';
-//         }
-//         else
-//         {
-//             echo 'Tu as rien à faire là !';
-//         }
-//     }
-// }
+    };
+
 ?>

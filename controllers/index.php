@@ -7,7 +7,7 @@
 require_once('libs/Smarty.class.php');
 $smarty = new Smarty;
 
-$smarty->setTemplateDir('template');
+// $smarty->setTemplateDir('templates_c');
 $smarty->display('template/index.tpl');
 
 ?>
