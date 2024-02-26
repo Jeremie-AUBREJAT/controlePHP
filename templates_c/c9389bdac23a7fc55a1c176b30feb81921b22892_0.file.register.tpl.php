@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2024-02-26 12:51:53
+/* Smarty version 3.1.48, created on 2024-02-26 14:14:23
   from 'C:\laragon\www\controlePHP\template\register.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_65dc89690aead5_18167708',
+  'unifunc' => 'content_65dc9cbf758964_75646308',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c9389bdac23a7fc55a1c176b30feb81921b22892' => 
     array (
       0 => 'C:\\laragon\\www\\controlePHP\\template\\register.tpl',
-      1 => 1708951907,
+      1 => 1708956858,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65dc89690aead5_18167708 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65dc9cbf758964_75646308 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +31,7 @@ function content_65dc89690aead5_18167708 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
     <div class="register-container">
-        <form action="?route=register" method="POST">
+        <form action="?route=register" method="POST" enctype="multipart/form-data">
             <h2>Inscription</h2>
             <label for="username">Email:</label>
             <input type="email" id="username" name="username" required>

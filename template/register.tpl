@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="register-container">
-        <form action="?route=register" method="POST">
+        <form action="?route=register" method="POST" enctype="multipart/form-data">
             <h2>Inscription</h2>
             <label for="username">Email:</label>
             <input type="email" id="username" name="username" required>
